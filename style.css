@@ -1,0 +1,578 @@
+/*BODY*/
+body 
+{
+    font-family: "Raleway", "Helvetica Neue", Helvetica, sans-serif;
+}
+p
+{
+    color: #383838;
+}
+
+/*HEADER*/
+/* --NAVIGATION--*/
+.logoReservia
+{
+    height: 2.813rem;
+    grid-area: logo;
+}
+
+.navigation:hover
+{
+    color: #0065fc;
+    cursor: pointer;
+    /*border-top: 3px solid #0065FC;
+    padding-top: 2.1rem;*/
+}
+
+/*.headerBox
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1380px;
+    padding-top: 1rem;
+    margin-left: 3.4rem;
+    margin-left: 3.4rem;
+}*/
+
+.header
+{
+    display: grid;
+    align-items: center;
+    max-width:1440px;
+    /*grid-template-areas: "logo . nav ins" ;
+    grid-template-columns: auto 1fr auto auto;
+    padding-top: 0.85rem;*/
+    margin:auto;
+}
+
+.hebTextColor
+{
+    color: #0065fc;
+    /*border-top: 3px solid #0065FC;
+    padding-top: 2rem;*/
+}
+
+.actTextColor
+{
+    color:black;
+}
+
+.navigationHeader
+{
+    grid-area: nav;
+}
+
+.navigation
+{
+    /*padding-left: 2rem;
+    padding-right: 2rem;*/
+    text-decoration: none;
+}
+
+.inscription
+{
+    grid-area: ins;
+    /*padding-left: 2rem;*/
+    color: #0065fc;
+    cursor: pointer;
+}
+
+/*--RECHERCHE--*/
+.titre
+{
+    /*margin-left: 1.5rem;
+    margin-top: 2.5rem;*/
+}
+
+#soustitre
+{
+    /*margin-top: -1rem;*/
+}
+
+.recherche
+{
+    display: flex;
+    flex-wrap: nowrap;
+    /*padding-left: 1.5rem;*/
+}
+
+.siteRecherche
+{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    width: 14rem;
+    border: 1px #f2f2f2 solid;
+    font-size: 1rem;
+    font-weight: bold;
+}
+::placeholder
+{
+    color: #a9a9a9;
+    padding-left: 0.5rem;
+}
+
+.buttonRecherche
+{
+    background-color:  #0065FC;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border:none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: none;
+    padding-top: 1rem;
+    width: 8.5rem;
+    color:white;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+.iconSearch
+{
+    visibility: hidden;
+}
+
+.localisation
+{
+    background-color:  #f2f2f2;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.25rem;
+}
+    
+/*--INFORMATION--*/
+#infoBox
+{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    /*margin-left: 1.5rem;*/
+}
+.infoImg
+{
+    height: 2rem;
+    min-height: 2rem;
+    width: 2rem;
+    min-width: 2rem;
+    border: solid 1px #d9d9d9;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.faviconImg
+{
+    color:#0065fc;
+}
+
+/* --FILTRES-- */
+.filtres
+{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /*margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;*/
+}
+
+.filtreBox
+{
+    /* flex-basis: 20%; */
+    display:flex;
+    align-items: center;
+    border: 2px #d9d9d9 solid;
+    border-radius: 2rem;
+    /*margin-left: 2rem;*/
+    height: 3.25rem;
+    cursor: pointer;
+}
+.filtreBox:hover
+{
+    transform: scale(1.1);
+}
+
+.filtre-img
+{
+    display:flex;
+    width: 3rem;
+    height: 3rem;
+    min-width: 3.5rem;
+    min-height: 3.5rem;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #DEEBFF;
+    margin-left: -2px;
+}
+
+.imageFiltre
+{
+    color:#0065FC;
+    
+}
+
+.filtre-content
+{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1em;
+    font-weight:bold;
+}
+
+/*MAIN*/
+
+/*--LOCATION--*/
+/*.location
+{
+    display:flex;
+    flex-wrap: nowrap;
+}*/
+
+.hebergements, .populaire
+{
+    background-color: #f2f2f2;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 1.5rem;
+}
+.hebergements
+{
+    width: 855px;
+    max-width: 1440px;
+    /*margin-left: 2rem;
+    padding-right: 2rem;*/
+}
+.populaire{
+    width: 400px ;
+    max-width: 1440px;
+    /*margin-right: 2rem;
+    margin-left: 2rem;*/
+}
+
+
+/* --HEBERGEMENT--*/
+.cardHosting
+{
+    background-color: white;
+    box-shadow: 6px 6px 9px #323232;
+    border-radius: 1.25rem;
+    padding: 0.375rem;
+    width: 250px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    /*box-sizing: border-box*/
+}
+.cardHosting:hover
+{
+    transform: scale(1.025);
+}
+
+/*.herbergementBox
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}*/
+
+.card-img
+{
+    height: 7rem;
+}
+
+.card-content
+{
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.imageH
+{
+    width: 100%;
+    height: 7rem;
+    border-top-left-radius:  1rem;
+    border-top-right-radius: 1rem;
+    object-fit: cover;
+}
+
+/*--POPULAIRE--*/
+
+.cardPopulaire
+{
+    background-color: white;
+    box-shadow: 6px 6px 9px #323232;
+    border-radius: 1.25rem;
+    padding: 0.375rem;
+    display: flex; 
+    width: 385px;
+    margin-top: 2rem;
+    max-height: 8rem; 
+    cursor: pointer;
+}
+
+.cardPopulaire:hover
+{
+    transform: scale(1.025);
+}
+
+
+.cardP-content
+{
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.imageP
+{
+    height: 100%;
+    width: 7.75rem;
+    border-top-left-radius:  1rem;
+    border-bottom-left-radius: 1rem;
+    object-fit: cover;
+}
+
+/*--ACTIVITES--*/
+.activites
+{
+    /*margin-top: 2rem;*/
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /*margin-right: 2rem;
+    margin-left: 2rem;*/
+}
+
+.cardA1
+{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 6px 9px #323232;
+    border-radius: 1rem;
+    width: 330px;
+    max-width: 330px;
+    height: 540px;
+    cursor: pointer;
+}
+.cardA1:hover
+{
+    transform: scale(1.025);
+}
+
+.cardA2
+{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 6px 9px #323232;
+    border-radius: 1.25rem;
+    width: 330px;
+    max-width: 330px;
+    height: 293px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.cardA2:hover
+{
+    transform: scale(1.025);
+}
+
+.cardA4
+{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 6px 9px #323232;
+    border-radius: 1.25rem;
+    width: 330px;
+    max-width: 330px;
+    height: 293px;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.cardA4:hover
+{
+    transform: scale(1.025);
+}
+
+.cardA3
+{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 6px 9px #323232;
+    border-radius: 1.25rem;
+    width: 330px;
+    max-width: 330px;
+    height: 216px;
+    cursor: pointer;
+}
+.cardA3:hover
+{
+    transform: scale(1.025);
+}
+
+
+.cardA1-img
+{
+    height: 480px;
+}
+.cardA2-img
+{
+    height: 233px;
+}
+.cardA3-img
+{
+    height: 156px;
+}
+
+.imageA
+{
+    width:100%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    object-fit: cover;
+}
+
+.cardActivitesTitle
+{
+    padding-left: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+/*.ActiviesBox
+{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    max-width: 1410px;
+}*/
+
+.ActiviteCardBox
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/*--FOOTER--*/
+footer
+{
+    background-color: #f2f2f2;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2.25rem;
+}
+
+/*.Footbox
+{
+    display: flex;
+    justify-content: space-around;
+}*/
+ 
+
+/*Media queries*/
+/*--Mobile sttyle--*/
+@media screen and (max-width:600px)
+{
+    /*HEADER*/
+    /* --NAVIGATION--*/
+    .header
+    {
+    grid-template-areas: "logo . ins"
+                            "nav nav nav";
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 5em 5em;
+    max-width:600px;
+    }
+    .logoReservia
+    {
+        padding-left: 1.5rem;
+    }
+    .inscription
+    {
+        padding-right: 1.5rem;
+    }
+
+    .hebTextColor
+    {
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 2rem;
+    }
+    .navigation:hover
+    {
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 2rem;
+    }
+    .navigation
+    {
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+    }
+
+    /*MAIN*/
+    /*RECHERCHE*/
+    .titre, .soustitre, .recherche
+    {
+        margin-left: 1.5rem;
+        margin-right:1.5rem;
+    }
+
+    .buttonRecherche
+    {
+        width: 4rem;
+        padding-bottom: 1rem;
+    }
+    .textRecherche
+    {
+        display: none;
+    }
+    .iconSearch
+    {
+        visibility: visible;
+    }
+
+    /* --FILTRES-- */
+    .filtres
+    {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .filtreBox
+    {
+        margin-bottom:1rem;
+    }
+
+    /*--INFORMATION*/
+    #infoBox
+    {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    
+    /*--HEBERGEMENT--*/
+    .hebergements
+    {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;    
+    }
+}
