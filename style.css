@@ -20,11 +20,11 @@ p
 {
     color: #0065fc;
     cursor: pointer;
-    /*border-top: 3px solid #0065FC;
-    padding-top: 2.1rem;*/
+    border-top: 3px solid #0065FC;
+    padding-top: 2.1rem;
 }
 
-/*.headerBox
+.headerBox
 {
     display: flex;
     align-items: center;
@@ -33,24 +33,24 @@ p
     padding-top: 1rem;
     margin-left: 3.4rem;
     margin-left: 3.4rem;
-}*/
+}
 
 .header
 {
     display: grid;
     align-items: center;
     max-width:1440px;
-    /*grid-template-areas: "logo . nav ins" ;
+    grid-template-areas: "logo . nav ins" ;
     grid-template-columns: auto 1fr auto auto;
-    padding-top: 0.85rem;*/
+    padding-top: 0.85rem;
     margin:auto;
 }
 
 .hebTextColor
 {
     color: #0065fc;
-    /*border-top: 3px solid #0065FC;
-    padding-top: 2rem;*/
+    border-top: 3px solid #0065FC;
+    padding-top: 2rem;
 }
 
 .actTextColor
@@ -65,15 +65,15 @@ p
 
 .navigation
 {
-    /*padding-left: 2rem;
-    padding-right: 2rem;*/
+    padding-left: 2rem;
+    padding-right: 2rem;
     text-decoration: none;
 }
 
 .inscription
 {
     grid-area: ins;
-    /*padding-left: 2rem;*/
+    padding-left: 2rem;
     color: #0065fc;
     cursor: pointer;
 }
@@ -81,20 +81,20 @@ p
 /*--RECHERCHE--*/
 .titre
 {
-    /*margin-left: 1.5rem;
-    margin-top: 2.5rem;*/
+    margin-left: 1.5rem;
+    margin-top: 2.5rem;
 }
 
 #soustitre
 {
-    /*margin-top: -1rem;*/
+    margin-top: -1rem;
 }
 
 .recherche
 {
     display: flex;
     flex-wrap: nowrap;
-    /*padding-left: 1.5rem;*/
+    padding-left: 1.5rem;
 }
 
 .siteRecherche
@@ -151,7 +151,7 @@ p
     display:flex;
     justify-content: flex-start;
     align-items: center;
-    /*margin-left: 1.5rem;*/
+    margin-left: 1.5rem;
 }
 .infoImg
 {
@@ -178,19 +178,18 @@ p
     display:flex;
     flex-wrap: wrap;
     align-items: center;
-    /*margin-top: 1.5rem;
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    margin-left: 1.5rem;*/
+    margin-left: 1.5rem;
 }
 
 .filtreBox
 {
-    /* flex-basis: 20%; */
     display:flex;
     align-items: center;
     border: 2px #d9d9d9 solid;
     border-radius: 2rem;
-    /*margin-left: 2rem;*/
+    margin-left: 2rem;
     height: 3.25rem;
     cursor: pointer;
 }
@@ -232,11 +231,11 @@ p
 /*MAIN*/
 
 /*--LOCATION--*/
-/*.location
+.location
 {
     display:flex;
     flex-wrap: nowrap;
-}*/
+}
 
 .hebergements, .populaire
 {
@@ -252,14 +251,14 @@ p
 {
     width: 855px;
     max-width: 1440px;
-    /*margin-left: 2rem;
-    padding-right: 2rem;*/
+    margin-left: 2rem;
+    padding-right: 2rem;
 }
 .populaire{
     width: 400px ;
     max-width: 1440px;
-    /*margin-right: 2rem;
-    margin-left: 2rem;*/
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 
@@ -274,20 +273,20 @@ p
     margin-top: 1rem;
     margin-bottom: 1rem;
     cursor: pointer;
-    /*box-sizing: border-box*/
+    box-sizing: border-box
 }
 .cardHosting:hover
 {
     transform: scale(1.025);
 }
 
-/*.herbergementBox
+.herbergementBox
 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-}*/
+}
 
 .card-img
 {
@@ -348,11 +347,11 @@ p
 /*--ACTIVITES--*/
 .activites
 {
-    /*margin-top: 2rem;*/
+    margin-top: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    /*margin-right: 2rem;
-    margin-left: 2rem;*/
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 .cardA1
@@ -454,14 +453,14 @@ p
     padding-bottom: 1rem;
 }
 
-/*.ActiviesBox
+.ActiviesBox
 {
     display: flex;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: space-between;
     max-width: 1410px;
-}*/
+}
 
 .ActiviteCardBox
 {
@@ -478,11 +477,11 @@ footer
     margin-top: 2.25rem;
 }
 
-/*.Footbox
+.Footbox
 {
     display: flex;
     justify-content: space-around;
-}*/
+}
  
 
 /*Media queries*/
