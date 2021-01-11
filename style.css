@@ -9,58 +9,48 @@ p
 }
 
 /*HEADER*/
+header
+{
+    max-width: 1420px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
 /* --NAVIGATION--*/
 .logoReservia
 {
     height: 2.813rem;
-    grid-area: logo;
 }
+.navigationHeader
+    {
+        display:flex;
+    }
 
 .navigation:hover
 {
     color: #0065fc;
     cursor: pointer;
-    border-top: 3px solid #0065FC;
-    padding-top: 2.1rem;
-}
-
-.headerBox
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1380px;
-    padding-top: 1rem;
-    margin-left: 3.4rem;
-    margin-left: 3.4rem;
 }
 
 .header
 {
-    display: grid;
+    display: flex;
     align-items: center;
-    max-width:1440px;
-    grid-template-areas: "logo . nav ins" ;
-    grid-template-columns: auto 1fr auto auto;
     padding-top: 0.85rem;
     margin:auto;
+}
+.espacement
+{
+    flex-grow: 1;
 }
 
 .hebTextColor
 {
     color: #0065fc;
-    border-top: 3px solid #0065FC;
-    padding-top: 2rem;
 }
 
 .actTextColor
 {
     color:black;
-}
-
-.navigationHeader
-{
-    grid-area: nav;
 }
 
 .navigation
@@ -72,7 +62,6 @@ p
 
 .inscription
 {
-    grid-area: ins;
     padding-left: 2rem;
     color: #0065fc;
     cursor: pointer;
@@ -81,7 +70,6 @@ p
 /*--RECHERCHE--*/
 .titre
 {
-    margin-left: 1.5rem;
     margin-top: 2.5rem;
 }
 
@@ -94,7 +82,6 @@ p
 {
     display: flex;
     flex-wrap: nowrap;
-    padding-left: 1.5rem;
 }
 
 .siteRecherche
@@ -102,7 +89,6 @@ p
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
-    width: 14rem;
     border: 1px #f2f2f2 solid;
     font-size: 1rem;
     font-weight: bold;
@@ -121,7 +107,6 @@ p
     border:none;
     padding-right: 1rem;
     padding-left: 1rem;
-    padding-bottom: none;
     padding-top: 1rem;
     width: 8.5rem;
     color:white;
@@ -142,7 +127,7 @@ p
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3.25rem;
+    min-width: 3.25rem;
 }
     
 /*--INFORMATION--*/
@@ -151,7 +136,6 @@ p
     display:flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 1.5rem;
 }
 .infoImg
 {
@@ -180,7 +164,6 @@ p
     align-items: center;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    margin-left: 1.5rem;
 }
 
 .filtreBox
@@ -189,7 +172,7 @@ p
     align-items: center;
     border: 2px #d9d9d9 solid;
     border-radius: 2rem;
-    margin-left: 2rem;
+    
     height: 3.25rem;
     cursor: pointer;
 }
@@ -214,8 +197,7 @@ p
 
 .imageFiltre
 {
-    color:#0065FC;
-    
+    color:#0065FC; 
 }
 
 .filtre-content
@@ -229,12 +211,170 @@ p
 }
 
 /*MAIN*/
-
 /*--LOCATION--*/
+@media screen and (min-width:601px)
+{
+    .filtreBox
+    {
+        margin-left: 2rem;
+    }
+}
+@media screen and (min-width:1441px)
+{
+    .navigation:hover
+    {
+        border-top: 4px solid #0065FC;
+        padding-top: 2rem;
+    }
+    .siteRecherche
+    {
+        width: 14rem;
+    }
+    .hebTextColor
+    {
+        border-top: 3px solid #0065FC;
+        padding-top: 2rem;
+    }
+    .location
+    {
+        max-width: 1480px;
+    }
+    .populaire
+    {
+        margin-right: 2rem;
+        padding-right: 2rem;
+    }
+    .cardPopulaire
+    {
+        width: 385px;
+        height: 9rem;
+    }
+    .imageP
+    {
+        width: 7.75rem;
+    }
+    .cardHosting
+    {
+        width: 250px;
+    }
+    .card-img
+    {
+        height: 7rem;
+    }
+}
+@media screen and (max-width: 1440px)
+{
+    .hebTextColor
+    {
+        border-top: 3px solid #0065FC;
+        padding-top: 2rem;
+    }
+    .navigation:hover
+    {
+        border-top: 4px solid #0065FC;
+        padding-top: 2rem;
+    }
+    .siteRecherche
+    {
+        width: 14rem;
+    }
+    .location
+    {
+        flex-direction: column-reverse;
+        max-width: 100%;
+        margin-right: 2rem;
+    }
+    .populaireBox
+    {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1.5rem;
+    }
+    .cardPopulaire
+    {
+        width: 30%;
+        height: 10rem;
+    }
+    .imageP
+    {
+        width: 7.75rem;
+    }
+    .cardHosting
+    {
+        width: 30%;
+    }
+    .card-img
+    {
+        height: 11rem;
+    }
+    .populaire
+    {
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (max-width:1130px)
+{
+    .populaireBox
+    {
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .cardPopulaire
+    {
+        width: 100%;
+        height: 9rem;
+    }
+    .populaire
+    {
+        padding-right: 2.5rem;
+    }
+    .imageP
+    {
+        width: 17rem;
+    }
+    .cardHosting
+    {
+        width: 48%;
+    }
+    .cardA
+    {
+        width: 48%;
+        margin-top: 2.5rem;
+    }
+    .cardA-img
+    {
+        height: 11rem;
+    }
+}
+@media screen and (max-width:850px)
+{
+    .cardHosting, .cardA
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width:560px)
+{
+    .location
+    {
+        min-width: 510px;
+        margin-right: 2rem;
+    }
+    .activites
+    {
+        min-width: 470px;
+    }
+}
+
+h3 + p
+{
+    line-height: 0.3em;
+}
+
 .location
 {
     display:flex;
-    flex-wrap: nowrap;
 }
 
 .hebergements, .populaire
@@ -242,22 +382,18 @@ p
     background-color: #f2f2f2;
     margin-top: 2rem;
     padding-top: 1rem;
-    padding-right: 2rem;
     padding-left: 2rem;
     padding-bottom: 1rem;
     border-radius: 1.5rem;
 }
+
 .hebergements
 {
-    width: 855px;
-    max-width: 1440px;
     margin-left: 2rem;
     padding-right: 2rem;
 }
-.populaire{
-    width: 400px ;
-    max-width: 1440px;
-    margin-right: 2rem;
+.populaire
+{
     margin-left: 2rem;
 }
 
@@ -269,7 +405,6 @@ p
     box-shadow: 6px 6px 9px #323232;
     border-radius: 1.25rem;
     padding: 0.375rem;
-    width: 250px;
     margin-top: 1rem;
     margin-bottom: 1rem;
     cursor: pointer;
@@ -288,11 +423,6 @@ p
     justify-content: space-between;
 }
 
-.card-img
-{
-    height: 7rem;
-}
-
 .card-content
 {
     padding-left: 1rem;
@@ -302,14 +432,13 @@ p
 .imageH
 {
     width: 100%;
-    height: 7rem;
+    height: 100%;
     border-top-left-radius:  1rem;
     border-top-right-radius: 1rem;
     object-fit: cover;
 }
 
 /*--POPULAIRE--*/
-
 .cardPopulaire
 {
     background-color: white;
@@ -317,9 +446,7 @@ p
     border-radius: 1.25rem;
     padding: 0.375rem;
     display: flex; 
-    width: 385px;
-    margin-top: 2rem;
-    max-height: 8rem; 
+    margin-top: 2rem; 
     cursor: pointer;
 }
 
@@ -338,7 +465,6 @@ p
 .imageP
 {
     height: 100%;
-    width: 7.75rem;
     border-top-left-radius:  1rem;
     border-bottom-left-radius: 1rem;
     object-fit: cover;
@@ -354,88 +480,99 @@ p
     margin-left: 2rem;
 }
 
-.cardA1
+.activitesBox
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1410px;
+}
+
+@media screen and (min-width: 1251px)
+{
+    .activites
+    {
+        height: 600px;
+    }
+    .cardA
+    {
+        width: 23.85%;
+        display: flex;
+        flex-direction: column;
+    }
+    .dimImg3
+    {
+        position: relative;
+        top: 330px;
+        right: 25.4%;
+    }
+    .dimImg4
+    {
+        position: relative;
+        right: 25.4%;
+    }
+    .dimImg6
+    {
+        position: relative;
+        bottom: 304.5px;
+    }
+    .dimImg5
+    {
+        position: relative;
+        left: 76%;
+        bottom: 530px;
+    }
+
+    .dimImg1, .dimImg4
+    {
+        height: 530px;
+    }
+    .dimImg2, .dimImg6
+    {
+        height: 303.4px; 
+    }
+    .dimImg3, .dimImg5
+    {
+        height: 202.3px;
+    }
+
+    .heihtImg5, .heihtImg3
+    {
+        height: 71%;
+    }
+    .heihtImg1, .heihtImg4
+    {
+        height: 100%;
+    }
+    .heihtImg2, .heihtImg6
+    {
+        height: 81%;
+    }
+}
+@media screen and (min-width:1131px) and (max-width:1250px)
+{
+    .cardA
+    {
+        width: 30%;
+        margin-top: 2.5rem;
+    }
+    .cardA-img
+    {
+        height: 11rem;
+    }
+}
+
+.cardA
 {
     background-color: white;
-    display: flex;
-    flex-direction: column;
     box-shadow: 6px 6px 9px #323232;
     border-radius: 1rem;
-    width: 330px;
-    max-width: 330px;
-    height: 540px;
     cursor: pointer;
 }
-.cardA1:hover
+
+.cardA:hover
 {
     transform: scale(1.025);
-}
-
-.cardA2
-{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 6px 6px 9px #323232;
-    border-radius: 1.25rem;
-    width: 330px;
-    max-width: 330px;
-    height: 293px;
-    margin-bottom: 2rem;
-    cursor: pointer;
-}
-.cardA2:hover
-{
-    transform: scale(1.025);
-}
-
-.cardA4
-{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 6px 6px 9px #323232;
-    border-radius: 1.25rem;
-    width: 330px;
-    max-width: 330px;
-    height: 293px;
-    margin-top: 2rem;
-    cursor: pointer;
-}
-.cardA4:hover
-{
-    transform: scale(1.025);
-}
-
-.cardA3
-{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 6px 6px 9px #323232;
-    border-radius: 1.25rem;
-    width: 330px;
-    max-width: 330px;
-    height: 216px;
-    cursor: pointer;
-}
-.cardA3:hover
-{
-    transform: scale(1.025);
-}
-
-
-.cardA1-img
-{
-    height: 480px;
-}
-.cardA2-img
-{
-    height: 233px;
-}
-.cardA3-img
-{
-    height: 156px;
 }
 
 .imageA
@@ -449,23 +586,7 @@ p
 
 .cardActivitesTitle
 {
-    padding-left: 1.25rem;
-    padding-bottom: 1rem;
-}
-
-.ActiviesBox
-{
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-between;
-    max-width: 1410px;
-}
-
-.ActiviteCardBox
-{
-    display: flex;
-    flex-direction: column;
+    padding-left: 1.3rem;
 }
 
 /*--FOOTER--*/
@@ -477,7 +598,7 @@ footer
     margin-top: 2.25rem;
 }
 
-.Footbox
+.footbox
 {
     display: flex;
     justify-content: space-around;
@@ -485,53 +606,58 @@ footer
  
 
 /*Media queries*/
-/*--Mobile sttyle--*/
+/*--Mobile style--*/
 @media screen and (max-width:600px)
 {
     /*HEADER*/
     /* --NAVIGATION--*/
+
+    .hebTextColor
+    {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 2rem;
+        position: relative;
+        right: 5rem;
+    }
+    .actTextColor
+    {
+        position: relative;
+        left: 5rem;
+    }
+    .navigation:hover
+    {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 2rem;
+    }
     .header
     {
-    grid-template-areas: "logo . ins"
-                            "nav nav nav";
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: 5em 5em;
-    max-width:600px;
+        padding-bottom:5rem;
+        max-width: 580px;
     }
-    .logoReservia
+    .navigationHeader
     {
-        padding-left: 1.5rem;
+        position:relative;
+        top: 5rem;
     }
     .inscription
     {
         padding-right: 1.5rem;
     }
 
-    .hebTextColor
-    {
-        border-bottom: 3px solid #0065FC;
-        padding-bottom: 2rem;
-    }
-    .navigation:hover
-    {
-        border-bottom: 3px solid #0065FC;
-        padding-bottom: 2rem;
-    }
-    .navigation
-    {
-        padding-left: 3rem;
-        padding-right: 3rem;
-
-    }
 
     /*MAIN*/
     /*RECHERCHE*/
     .titre, .soustitre, .recherche
     {
-        margin-left: 1.5rem;
         margin-right:1.5rem;
     }
-
+    .siteRecherche
+    {
+        width: 25rem;
+        min-width: 20rem;
+    }
     .buttonRecherche
     {
         width: 4rem;
@@ -549,8 +675,7 @@ footer
     /* --FILTRES-- */
     .filtres
     {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
+        
         flex-direction: column;
         align-items: flex-start;
         margin-top: 1rem;
@@ -564,14 +689,20 @@ footer
     /*--INFORMATION*/
     #infoBox
     {
-        margin-left: 1.5rem;
         margin-right: 1.5rem;
     }
-    
-    /*--HEBERGEMENT--*/
-    .hebergements
+
+    /*MAIN*/
+    .imageP
     {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;    
+        width: 9rem;
+    }
+
+    /*FOOTER*/
+    .footbox
+    {
+       flex-direction: column;
+       padding-left: 2rem;
+       min-width: 550px;
     }
 }

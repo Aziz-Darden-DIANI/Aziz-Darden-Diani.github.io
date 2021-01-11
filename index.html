@@ -10,23 +10,19 @@
     <script src="https://kit.fontawesome.com/6d1cab24da.js" crossorigin="anonymous"></script><!--fontawesome icone-->
 </head>
 <body>
-
     <!--HEADER-->
-    <header class="header">
+    <header>
         <!--NAVIGATION-->
-        <img class="logoReservia" src="images/Reservia.png" alt= "[Reservia]"/>>
-        <nav class="navigationHeader">
-            <a class="navigation hebTextColor" href="#hosting">Hébergements</a>
-            <a class="navigation actTextColor" href="#activity">Activités</a>
-        </nav>
-        <span class="inscription"><strong>S'inscrire</strong></span>
-        <!--NAVIGATION-->
-    </header>
-    <!--HEADER-->
-
-    <!--MAIN-->
-    <main>
-
+        <div class="header">
+            <img class="logoReservia element 1" src="images/Reservia.png" alt= "[Reservia]"/>
+            <div class="espacement element 2">  </div>
+            <nav class="navigationHeader element 3">
+                <di><a class="navigation hebTextColor" href="#hosting">Hébergements</a></di>
+                <div><a class="navigation actTextColor" href="#activity">Activités</a></div>
+            </nav>
+            <span class="inscription element 4"><strong>S'inscrire</strong></span>
+        </div>
+   
         <!--RECHERCHE-->
         <div class="titre">
             <h1 id="titre">Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -42,7 +38,6 @@
                     <i class="fas fa-search iconSearch"></i>
             </button>
         </form>
-        <!--RECHERCHE-->
 
         <!--FILTRE-->
         <div class="filtres">
@@ -72,18 +67,18 @@
                 <span class="filtre-content">Animaux autorisés</span>
             </div>
         </div>
-        <!--FILTRE-->
 
         <!--INFORMATION-->
         <div id="infoBox">
             <div class="infoImg"><i class="fas fa-info faviconImg"></i></div>
             <div class="infoContent">Plus de 500 logements sont disponibles dans cette ville</div>
         </div>
-        <!--INFORMATION-->
-        
+    </header>
+
+    <!--MAIN-->
+    <main> 
         <!--LOCATION-->
         <section class="location">
-
             <!--HEBERGEMENT-->
             <div class="hebergements">
                 <h2 id="hosting">Hébergements à Marseille</h2>
@@ -175,7 +170,6 @@
                 </div>
                 <h4>Afficher plus</h4>
             </div>
-            <!--HEBERGEMENT-->
             
             <!--POPULAIRE-->
             <aside class="populaire">
@@ -225,83 +219,74 @@
                     </article>
                 </div>
             </aside>
-            <!--POPULAIRE-->
         </section>
-        <!--LOCATION-->
  
         <!--ACTIVITES-->
         <section class="activites">
             <h2 id="activity">Activités à Marseille</h2>
-            <div class="ActiviesBox">
-                <article class="cardA1">
-                    <div class="cardA1-img">
+            <div class="activitesBox">
+                <div class="cardA dimImg1">
+                    <div class="cardA-img heihtImg1">
                         <img class="imageA" src="images/vieuxPortSmal.jpg" alt="[Vieux Port]"/>
                     </div>
                     <h3 class="cardActivitesTitle">Vieux Port</h3>
-                </article>
-                <div class="ActiviteCardBox">
-                    <article class="cardA2">
-                        <div class="cardA2-img">
+                </div>
+                
+                    <div class="cardA dimImg2">
+                        <div class="cardA-img heihtImg2">
                             <img class="imageA" src="images/PomeguesSmall.jpg" alt="[Fort de pomegues]"/>
                         </div>
                         <h3 class="cardActivitesTitle">Fort de Pomègues</h3>
-                    </article>
-                    <article class="cardA3">
-                        <div class="cardA3-img">
+                    </div>
+                    <div class="cardA dimImg3">
+                        <div class="cardA-img heihtImg3">
                             <img class="imageA" src="images/FrioulSmall.jpg" alt="[ile du frioul]"/>
                         </div>
                         <h3 class="cardActivitesTitle">Île du Frioul</h3>
-                    </article>
-                </div>
-                <article class="cardA1">
-                    <div class="cardA1-img">
+                    </div>
+                
+                <div class="cardA dimImg4">
+                    <div class="cardA-img heihtImg4">
                         <img class="imageA" src="images/CalanquesSmall.jpg" alt="[Parc National des Calanques]"/>
                     </div>
                     <h3 class="cardActivitesTitle">Parc National des Calanques</h3>
-                </article>
-                <div class="ActiviteCardBox">
-                    <article class="cardA3">
-                        <div class="cardA3-img">
+                </div>
+                
+                    <div class="cardA dimImg5">
+                        <div class="cardA-img heihtImg5">
                             <img class="imageA" src="images/DameSmall.jpg" alt="[Notre Dame-de-la-Garde]"/>
                         </div>
                         <h3 class="cardActivitesTitle">Notre Dame-de-la-Garde</h3>
-                    </article>
-                    <article class="cardA4">
-                        <div class="cardA2-img">
+                    </div>
+                    <div class="cardA dimImg6">
+                        <div class="cardA-img heihtImg6">
                             <img class="imageA" src="images/LongchampSmall.jpg" alt="[Parc Longchamp]"/>
                         </div>
                         <h3 class="cardActivitesTitle">Parc Longchamp</h3>
-                    </article>
-                </div>
+                    </div>
+                
             </div>
-        </section>
-        <!--ACRTIVITES-->
-        
+        </section> 
     </main>
-    <!--MAIN-->
 
     <!--FOOTER-->
-    <footer>
-        <div class="Footbox">
-            <div class="A propos">
-                <h4>A propos</h4>
-                <p>Fonctionnement du site</p>
-                <p>Conditions générales de vente</p>
-                <p>Données et confidentialité</p>
-            </div>
-            <div class="Nos-hebergements">
-                <h4>Nos hébergements</h4>
-                <p>Charte qualité</p>
-                <p>Soumettre votre hôtel</p>
-            </div>
-            <div class="Assistance">
-                <h4>Assistance</h4>
-                <p>Centre d'aide</p>
-                <p>Nous contacter</p>
-            </div>
-        </div> 
+    <footer class="footbox">
+        <div class="aPropos">
+            <h4>A propos</h4>
+            <p>Fonctionnement du site</p>
+            <p>Conditions générales de vente</p>
+            <p>Données et confidentialité</p>
+        </div>
+        <div class="nosHebergements">
+            <h4>Nos hébergements</h4>
+            <p>Charte qualité</p>
+            <p>Soumettre votre hôtel</p>
+        </div>
+        <div class="assistance">
+            <h4>Assistance</h4>
+            <p>Centre d'aide</p>
+            <p>Nous contacter</p>
+        </div>
     </footer>
-    <!--FOOTER-->
-
 </body>
 </html>
