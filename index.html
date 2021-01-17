@@ -11,28 +11,33 @@
 </head>
 <body>
     <!--HEADER-->
-    <header>
+    <header class="header">
         <!--NAVIGATION-->
-        <div class="header">
-            <img class="logoReservia element 1" src="images/Reservia.png" alt= "[Reservia]"/>
-            <div class="espacement element 2">  </div>
-            <nav class="navigationHeader element 3">
-                <di><a class="navigation hebTextColor" href="#hosting">Hébergements</a></di>
-                <div><a class="navigation actTextColor" href="#activity">Activités</a></div>
-            </nav>
-            <span class="inscription element 4"><strong>S'inscrire</strong></span>
+        <div class="logoBox">
+            <div class="logoReservia"><img class="Reservia" src="images/Reservia.png" alt= "[Reservia]"/></div>
+            <div class="navigation navHosting"><a class="hebergementText" href="#hosting">Hébergements</a></div>
         </div>
-   
+        <div class="navBox">
+            <div class="inscription"><strong>S'inscrire</strong></div>
+            <div class="navigation navActivite"><a class="activiteText" href="#activity">Activités</a></div>
+            <div class="navigation navHosting1"><a class="hebergementText" href="#hosting">Hébergements</a></div>
+        </div>
+    </header>
+
+    <!--MAIN-->
+    <main> 
+        
+    <section class="rechercheFiltreInfo"> 
         <!--RECHERCHE-->
-        <div class="titre">
-            <h1 id="titre">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <div class="titreHeader">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p id="soustitre">En plein centre ville ou en pleine nature</p>
         </div>
         <form class="recherche" action="debut.html" method="POST">
             <div  class="localisation">
                     <i class="fas fa-map-marker-alt imageGps"></i>
             </div>
-            <input class="siteRecherche" type="search" name="siteRecherche" placeholder="Mareseille, France">
+            <input class="siteRecherche" type="search" name="siteRecherche" placeholder="Marseille, France">
             <button class="buttonRecherche">
                     <span class="textRecherche">Rechercher</span>
                     <i class="fas fa-search iconSearch"></i>
@@ -67,16 +72,14 @@
                 <span class="filtre-content">Animaux autorisés</span>
             </div>
         </div>
-
+    
         <!--INFORMATION-->
         <div id="infoBox">
             <div class="infoImg"><i class="fas fa-info faviconImg"></i></div>
             <div class="infoContent">Plus de 500 logements sont disponibles dans cette ville</div>
         </div>
-    </header>
+    </section>
 
-    <!--MAIN-->
-    <main> 
         <!--LOCATION-->
         <section class="location">
             <!--HEBERGEMENT-->
@@ -232,18 +235,18 @@
                     <h3 class="cardActivitesTitle">Vieux Port</h3>
                 </div>
                 
-                    <div class="cardA dimImg2">
-                        <div class="cardA-img heihtImg2">
-                            <img class="imageA" src="images/PomeguesSmall.jpg" alt="[Fort de pomegues]"/>
-                        </div>
-                        <h3 class="cardActivitesTitle">Fort de Pomègues</h3>
+                <div class="cardA dimImg2">
+                    <div class="cardA-img heihtImg2">
+                        <img class="imageA" src="images/PomeguesSmall.jpg" alt="[Fort de pomegues]"/>
                     </div>
-                    <div class="cardA dimImg3">
-                        <div class="cardA-img heihtImg3">
-                            <img class="imageA" src="images/FrioulSmall.jpg" alt="[ile du frioul]"/>
-                        </div>
-                        <h3 class="cardActivitesTitle">Île du Frioul</h3>
+                    <h3 class="cardActivitesTitle">Fort de Pomègues</h3>
+                </div>
+                <div class="cardA dimImg3">
+                    <div class="cardA-img heihtImg3">
+                        <img class="imageA" src="images/FrioulSmall.jpg" alt="[ile du frioul]"/>
                     </div>
+                    <h3 class="cardActivitesTitle">Île du Frioul</h3>
+                </div>
                 
                 <div class="cardA dimImg4">
                     <div class="cardA-img heihtImg4">
@@ -252,18 +255,18 @@
                     <h3 class="cardActivitesTitle">Parc National des Calanques</h3>
                 </div>
                 
-                    <div class="cardA dimImg5">
-                        <div class="cardA-img heihtImg5">
-                            <img class="imageA" src="images/DameSmall.jpg" alt="[Notre Dame-de-la-Garde]"/>
-                        </div>
-                        <h3 class="cardActivitesTitle">Notre Dame-de-la-Garde</h3>
+                <div class="cardA dimImg5">
+                    <div class="cardA-img heihtImg5">
+                        <img class="imageA" src="images/DameSmall.jpg" alt="[Notre Dame-de-la-Garde]"/>
                     </div>
-                    <div class="cardA dimImg6">
-                        <div class="cardA-img heihtImg6">
-                            <img class="imageA" src="images/LongchampSmall.jpg" alt="[Parc Longchamp]"/>
-                        </div>
-                        <h3 class="cardActivitesTitle">Parc Longchamp</h3>
+                    <h3 class="cardActivitesTitle">Notre Dame-de-la-Garde</h3>
+                </div>
+                <div class="cardA dimImg6">
+                    <div class="cardA-img heihtImg6">
+                        <img class="imageA" src="images/LongchampSmall.jpg" alt="[Parc Longchamp]"/>
                     </div>
+                    <h3 class="cardActivitesTitle">Parc Longchamp</h3>
+                </div>
                 
             </div>
         </section> 
