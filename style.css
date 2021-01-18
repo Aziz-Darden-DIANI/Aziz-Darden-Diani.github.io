@@ -50,9 +50,8 @@ p
 }
 .hebergementText
 {
-    border-top: 3px solid #0065FC;
+    color:black;
     padding-top: 2rem;
-    color: #0065fc;
     text-decoration: none;
 }
 .activiteText
@@ -275,10 +274,13 @@ p
     background-color: white;
     box-shadow: 6px 6px 9px #323232;
     border-radius: 1.25rem;
-    padding: 0.375rem;
     display: flex; 
     margin-top: 2rem; 
     cursor: pointer;
+}
+.cardP-img
+{
+    margin:0.3rem;
 }
 .cardPopulaire:hover
 {
@@ -354,7 +356,7 @@ footer
 
 /*Media queries Responsive*/
 
-/*--MEDIA QUERIES DECKSTOP GENERAL--*/
+/*--MEDIA QUERIES DESKTOP GENERAL--*/
 @media screen and (min-width:601px)
 {
     .filtreBox
@@ -371,7 +373,7 @@ footer
     }
     .cardPopulaire
     {
-        width: 385px;
+        width: 25rem;
         height: 9rem;
     }
     .imageP
@@ -380,7 +382,7 @@ footer
     }
     .cardHosting
     {
-        width: 250px;
+        width: 16rem;
     }
     .card-img
     {
@@ -428,12 +430,12 @@ footer
     }
 }
 
-/*--MEDIA QUERIES DECKSTOP SPECIFIQUE SECTION ACTIVITES--*/
+/*--MEDIA QUERIES DESKTOP SPECIFIQUE SECTION ACTIVITES--*/
 @media screen and (min-width: 1251px)
 {
     .activites
     {
-        height: 600px;
+        height: 37rem;
     }
     .cardA
     {
@@ -441,50 +443,50 @@ footer
         display: flex;
         flex-direction: column;
     }
-    .dimImg3
+    .cardFrioul
     {
         position: relative;
         right: 25.4%;
-        top: 330px;
+        top: 20.45rem;
     }
-    .dimImg4
+    .cardCalanques
     {
         position: relative;
         right: 25.4%;
     }
-    .dimImg6
+    .cardLongchamp
     {
         position: relative;
-        bottom: 304.5px;
+        bottom: 19rem;
     }
-    .dimImg5
+    .cardDame
     {
         position: relative;
         left: 76%;
-        bottom: 530px;
+        bottom: 33.1rem;
     }
-    .dimImg1, .dimImg4
+    .cardvieuxPort, .cardCalanques
     {
-        height: 530px;
+        height: 33.1rem;
     }
-    .dimImg2, .dimImg6
+    .cardPomegues, .cardLongchamp
     {
-        height: 303.4px; 
+        height: 19rem; 
     }
-    .dimImg3, .dimImg5
+    .cardFrioul, .cardDame
     {
-        height: 202.3px;
+        height: 12.6rem;
     }
 
-    .heihtImg5, .heihtImg3
+    .heihtImgDame, .heihtImgFrioul
     {
         height: 71%;
     }
-    .heihtImg1, .heihtImg4
+    .heihtImgvieuxPort, .heihtImgCalanques
     {
         height: 100%;
     }
-    .heihtImg2, .heihtImg6
+    .heihtImgPomegues, .heihtImgLongchamp
     {
         height: 81%;
     }
@@ -501,173 +503,5 @@ footer
     .cardA-img
     {
         height: 11rem;
-    }
-}
-@media screen and (max-width:1130px)
-{
-    .populaireBox
-    {
-        display:flex;
-        flex-direction: column-reverse;
-    }
-    .cardPopulaire
-    {
-        width: 100%;
-        height: 9rem;
-        overflow: scroll;
-    }
-    .populaire
-    {
-        padding-right: 2.5rem;
-    }
-    .imageP
-    {
-        width: 17rem;
-    }
-    .cardHosting
-    {
-        width: 48%;
-    }
-    .cardA
-    {
-        width: 48%;
-        margin-top: 2.5rem;
-    }
-    .cardA-img
-    {
-        height: 11rem;
-    }
-}
-@media screen and (max-width:850px)
-{
-    .cardHosting, .cardA
-    {
-        width: 100%;
-    }
-}
-
-/*--MEDIA QUERIES MOBILE--*/
-@media screen and (max-width:600px)
-{
-    body
-    {
-        min-width: 355px;
-    }
-    /*HEADER --NAVIGATION--*/
-    .hebergementText, .hebergementText:hover, .activiteText:hover
-    {
-        border-top: none; 
-    }
-    .logoBox:hover, .navBox:hover
-    {
-        border-bottom: 3px solid #0065FC;
-    }
-    .navActivite:hover
-    {
-        margin-bottom: 2.5rem;
-    }
-    .logoBox
-    {
-        flex-basis: 50%;
-        flex-direction: column;
-        align-items: flex-start;
-        border-bottom: 3px solid #0065FC;
-    }
-    .navBox
-    {
-        flex-basis: 50%;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
-    }
-    .navActivite
-    {
-        margin-right: 1rem;
-        margin-left: 0;
-        margin-top: 3.5rem;
-        margin-bottom: 2.65rem;
-    }
-    .navHosting1
-    {
-        visibility: hidden;
-    }
-    .navHosting
-    {
-        visibility: visible;
-        margin-left: 1rem;
-        margin-top: 3.5rem;
-        margin-bottom: 2.5rem;
-    }
-    .inscription, .navHosting1
-    {
-        order:1;
-    } 
-    .inslogobox
-    {
-        visibility: visible;
-    }
-    .inslogobox1
-    {
-        visibility: hidden;
-        margin-left: 0.1rem;
-    }
-    
-    /*--MAIN RECHERCHE--*/
-    .siteRecherche
-    {
-        width: 12rem;
-        min-width: 9rem;
-    }
-    .buttonRecherche
-    {
-        width: 4rem;
-        padding-bottom: 1rem;
-    }
-    .textRecherche
-    {
-        display: none;
-    }
-    .iconSearch
-    {
-        visibility: visible;
-    }
-
-    /* --MAIN FILTRES-- */
-    .filtres
-    {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-    .filtreBox
-    {
-        margin-bottom:1rem;
-    }
-
-    /*--MAIN POPULAIRES--*/
-   
-    .imageP
-    {
-        width: 5rem;
-    }
-
-    /*--FOOTER--*/
-    .footbox
-    {
-       flex-direction: column;
-       padding-left: 2rem;
-    }
-}
-/*-- MEDIA QUERIES MOBILE TRES PETIT ECRAN --*/
-@media screen and (max-width:355px)
-{
-    .header, .rechercheFiltreInfo, .hebergements, .populaire, .activites
-    {
-        margin-left: 1.5rem;
-    }
-    .footbox
-    {
-        padding-left: 1.5rem;
     }
 }

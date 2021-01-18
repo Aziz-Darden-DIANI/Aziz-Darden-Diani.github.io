@@ -1,0 +1,136 @@
+
+      body
+    {
+        min-width: 355px;
+    }
+    /*HEADER --NAVIGATION--*/
+    .hebergementText, .hebergementText:hover, .activiteText:hover
+    {
+        border-top: none; 
+    }
+    .logoBox:hover, .navBox:hover
+    {
+        border-bottom: 3px solid #0065FC;
+    }
+    .navActivite:hover, .navHosting:hover
+    {
+        margin-bottom: 2.5rem;
+    }
+    .logoBox
+    {
+        border-bottom: 3px solid #f2f2f2;
+        flex-basis: 50%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navBox
+    {
+        border-bottom: 3px solid #f2f2f2;
+        flex-basis: 50%;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .navActivite
+    {
+        margin-right: 1rem;
+        margin-left: 0;
+        margin-top: 3.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .navHosting1
+    {
+        visibility: hidden;
+    }
+    .navHosting
+    {
+        visibility: visible;
+        margin-left: 1rem;
+        margin-top: 3.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .inscription, .navHosting1
+    {
+        order:1;
+    } 
+    .inslogobox
+    {
+        visibility: visible;
+    }
+    .inslogobox1
+    {
+        visibility: hidden;
+        margin-left: 0.1rem;
+    }
+    
+    /*--MAIN RECHERCHE--*/
+    .siteRecherche
+    {
+        width: 12rem;
+        min-width: 9rem;
+    }
+    .buttonRecherche
+    {
+        width: 4rem;
+        padding-bottom: 1rem;
+    }
+    .textRecherche
+    {
+        display: none;
+    }
+    .iconSearch
+    {
+        visibility: visible;
+    }
+
+    /* --MAIN FILTRES-- */
+    .filtres
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .filtreBox
+    {
+        margin-bottom:1rem;
+    }
+
+    /*--MAIN POPULAIRES--*/
+    .populaire, .hebergements
+    {
+        margin-left: 0rem;
+    }
+    .location
+    {
+        margin-right: 0rem;
+    }
+    .imageP
+    {
+        width: 7rem;
+    }
+    
+    h3
+    {
+        font-size: 1em;
+    }
+
+    /*--FOOTER--*/
+    .footbox
+    {
+       flex-direction: column;
+       padding-left: 2rem;
+    }
+
+/*-- MEDIA QUERIES MOBILE TRES PETIT ECRAN --*/
+@media screen and (max-width:355px)
+{
+    .header, .rechercheFiltreInfo,  .activites
+    {
+        margin-left: 1.3rem;
+    }
+    .footbox
+    {
+        padding-left: 1.3rem;
+    }
+}
