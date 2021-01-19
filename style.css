@@ -10,36 +10,22 @@ p
 }
 
 /*HEADER --NAVIGATION--*/
-.header
+.headerBox
 {
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 1.3rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.logoReservia
+{
+    flex-basis: 90%;
 }
 .Reservia
 {
     height: 2.8rem;
-}
-.navBox, .logoBox
-{
-    display: flex;
-    align-items: center;
-}
-.navHosting
-{
-    visibility: hidden;
-}
-.inscription
-{
-    order:3;
-    margin-left: 2rem;
-}
-.navActivite
-{
-    order:2;
-    margin-left: 2rem;
 }
 .hebergementText:hover, .activiteText:hover
 {
@@ -54,6 +40,10 @@ p
     padding-top: 2rem;
     text-decoration: none;
 }
+.navActivite
+{
+    margin-left: 2rem;
+}
 .activiteText
 {
     color:black;
@@ -63,6 +53,7 @@ p
 {
     color: #0065fc;
     cursor: pointer;
+    margin-left: 2rem;
 }
 
 /*--MAIN RECHERCHE FILTRE INFO*/
