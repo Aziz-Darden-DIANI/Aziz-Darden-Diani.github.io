@@ -2,7 +2,6 @@
 body 
 {
     font-family: "Raleway", "Helvetica Neue", Helvetica, sans-serif;
-    max-width: 1480px;
 }
 p
 {
@@ -36,15 +35,13 @@ p
 }
 .hebergementText
 {
-    color:black;
     padding-top: 2rem;
-    text-decoration: none;
 }
 .navActivite
 {
     margin-left: 2rem;
 }
-.activiteText
+.activiteText, .hebergementText
 {
     color:black;
     text-decoration: none;
@@ -373,7 +370,8 @@ footer
     }
     .cardHosting
     {
-        width: 16rem;
+        width: 30%;
+        margin-left: 1rem;
     }
     .card-img
     {
@@ -494,5 +492,9 @@ footer
     .cardA-img
     {
         height: 11rem;
+    }
+    .cardPopulaire
+    {
+        overflow: auto;
     }
 }
