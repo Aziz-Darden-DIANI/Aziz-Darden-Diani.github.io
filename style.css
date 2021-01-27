@@ -286,7 +286,7 @@ p
 }
 .iconpopulaire
 {
-    line-height: 4rem;
+    line-height: 5rem;
 }
 .cardP-img
 {
@@ -393,6 +393,10 @@ footer
     h3 + p
     {
         line-height: 0.3em;
+    }
+    h3
+    {
+        font-size: 1em;
     }
 }
 @media screen and (max-width: 1360px)
