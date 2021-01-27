@@ -229,7 +229,7 @@ p
     margin-top: 1rem;
     margin-bottom: 1rem;
     cursor: pointer;
-    height: 16rem;
+    height: 12rem;
 }
 .cardHosting:hover
 {
@@ -247,10 +247,19 @@ p
     padding-left: 1rem;
     padding-bottom: 1rem;
 }
+.card-content__text
+{
+    margin-bottom: 1rem;
+}
+.card-content__icon
+{
+    display: flex;
+    height: 1rem;
+}
 .card-img
-    {
-        height: 60%;
-    }
+{
+    height: 60%;
+}
 .imageH
 {
     width: 100%;
@@ -269,7 +278,7 @@ p
     display: flex; 
     margin-top: 2rem; 
     cursor: pointer;
-    height: 10rem;
+    height: 9rem;
 }
 .cardP-img
 {
@@ -283,10 +292,6 @@ p
 {
     padding-left: 1rem;
     padding-bottom: 1rem;
-}
-.iconpopulaire
-{
-    line-height: 5rem;
 }
 .cardP-img
 {
@@ -398,6 +403,14 @@ footer
     {
         font-size: 1em;
     }
+    .interline__title
+    {
+        line-height: 0.3em;
+    }
+    .card-content__text
+    {
+        height: 1rem;
+    }
 }
 @media screen and (max-width: 1360px)
 {
@@ -429,6 +442,14 @@ footer
     h3 + p
     {
         line-height: 0.3em;
+    }
+    .interline__title
+    {
+        line-height: 0.3em;
+    }
+    .card-content__text
+    {
+        height: 1.5rem;
     }
 }
 
@@ -513,5 +534,13 @@ footer
     h3
     {
         font-size: 1em;
+    }
+    .interline__title
+    {
+        line-height: 0.5em;
+    }
+    .card-content__text
+    {
+        height: 1.5rem;
     }
 }

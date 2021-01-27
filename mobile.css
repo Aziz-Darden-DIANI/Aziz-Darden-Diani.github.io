@@ -96,6 +96,10 @@
     {
         font-size: 1em;
     }
+    .interline__title
+    {
+        line-height: 0.5em;
+    }
 
     /*--FOOTER--*/
     .footbox
